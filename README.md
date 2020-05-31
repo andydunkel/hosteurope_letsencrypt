@@ -13,3 +13,7 @@ Instructions how to setup and use the script can be found here:
 If you have feedback or questions you can have a look to our support board:
 
 [https://ekiwi-blog.de/forum/board/board/16-webdesign-html-und-php/](https://ekiwi-blog.de/forum/board/board/16-webdesign-html-und-php/)
+
+## Thanks
+
+Thanks to Frank Breitinger ([www.fbreitinger.de](http://www.fbreitinger.de)) for the script.
