@@ -4,7 +4,7 @@
 #cd letsencrypt2
 
 #generate all certificates
-/usr/bin/env php7.2 main.php your@email.de account_key.pem cert_private_key.pem \
+/usr/bin/env php7.4 main.php your@email.de account_key.pem cert_private_key.pem \
 \
 -w /is/htdocs/wp1XXXXXXXX_YYYYYYYYYY/www/yourFolder \
 -d www.your_domain.de \
