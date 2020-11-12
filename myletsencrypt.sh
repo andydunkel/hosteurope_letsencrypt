@@ -20,5 +20,5 @@
 --fullchain fullchain.pem   #do not chain this one
 
 #upload them
-#/usr/bin/env php7.2 certificate_upload.php
+#/usr/bin/env php7.4 certificate_upload.php
 # not needed anymore as not working; will be send to the email
