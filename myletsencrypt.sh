@@ -4,7 +4,7 @@
 #cd letsencrypt2
 
 #generate all certificates
-/usr/bin/env php7.4 main.php your@email.de account_key.pem cert_private_key.pem \
+/usr/bin/env php main.php your@email.de account_key.pem cert_private_key.pem \
 \
 -w /is/htdocs/wp1XXXXXXXX_YYYYYYYYYY/www/yourFolder \
 -d www.your_domain.de \
@@ -20,5 +20,5 @@
 --fullchain fullchain.pem   #do not chain this one
 
 #upload them
-#/usr/bin/env php7.4 certificate_upload.php
+#/usr/bin/env php certificate_upload.php
 # not needed anymore as not working; will be send to the email
