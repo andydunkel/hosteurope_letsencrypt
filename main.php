@@ -153,7 +153,7 @@ function sendCertificate($myemail) {
     global $account_number;
 
     $email = new PHPMailer();
-    $email->SetFrom($myemail); //Name is optional
+    $email->setFrom($myemail); //Name is optional
     $email->Subject   = 'ssl certificate files';
     $email->Body      = "
 https://kis.hosteurope.de/administration/webhosting/admin.php?menu=6&mode=ssl_list&wp_id=$account_number
@@ -161,14 +161,14 @@ Zertifikat: fullchain.pem
 Key: cert_private_key.pem
 ";
 
-    $email->AddAddress($myemail);
+    $email->addAddress($myemail);
     
     $file_to_attach = __DIR__ . '/'.$argv[3];
-    $email->AddAttachment($file_to_attach , $argv[3]);
+    $email->addAttachment($file_to_attach , $argv[3]);
     $file_to_attach = __DIR__ . '/fullchain.pem';
-    $email->AddAttachment($file_to_attach , 'fullchain.pem');
+    $email->addAttachment($file_to_attach , 'fullchain.pem');
     
-    $sent = $email->Send();
+    $sent = $email->send();
     if($sent) {
         echo "sending certificates by mail ... OK\n";
     }
