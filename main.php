@@ -27,6 +27,7 @@ $account_number = "1000000"; //Hosteurope Account
 //End configuration
 
 require 'ACMECert.php';
+use skoerfgen\ACMECert\ACMECert;
 
 function exception_handler($e){
 	$err=error_get_last();
